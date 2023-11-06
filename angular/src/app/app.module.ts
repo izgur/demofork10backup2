@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-//import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { LocationListComponent } from './location-list/location-list.component';
 import { DistancePipe } from './distance.pipe';
@@ -15,7 +13,6 @@ import { StarsComponent } from './stars/stars.component';
 
 @NgModule({
   declarations: [
-    //AppComponent,
     LocationListComponent,
     DistancePipe,
     FrameworkComponent,
@@ -29,7 +26,7 @@ import { StarsComponent } from './stars/stars.component';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: "", component: HomepageComponent},
+      { path: "", component: HomepageComponent },
       { path: "about", component: AboutComponent },
     ]),
     
